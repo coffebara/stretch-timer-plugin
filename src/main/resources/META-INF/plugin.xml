@@ -1,0 +1,50 @@
+<idea-plugin>
+    <id>org.example.stretch-timer</id>
+    <name>Stretch Timer</name>
+    <version>1.0</version>
+    <vendor email="support@example.org" url="http://example.org">Stretch Timer Team</vendor>
+
+    <description>
+        <![CDATA[
+        <h2>스트레칭 타이머 플러그인</h2>
+        <p>장시간 코딩으로 인한 건강 문제를 예방하기 위한 스트레칭 타이머 플러그인입니다.</p>
+        
+        <h3>주요 기능</h3>
+        <ul>
+            <li>사용자 지정 시간 설정 (분/초)</li>
+            <li>타이머 종료 시 알림 메시지 표시</li>
+            <li>스트레칭 영상 바로가기 제공</li>
+        </ul>
+        
+        <h3>사용 방법</h3>
+        <ol>
+            <li>Tools 메뉴에서 "Start Stretch Timer" 선택</li>
+            <li>원하는 시간(분/초) 설정</li>
+            <li>타이머가 종료되면 알림 메시지 확인</li>
+            <li>"Yes" 클릭 시 스트레칭 영상 자동 재생</li>
+        </ol>
+        
+        <p>건강한 코딩 습관을 위한 필수 플러그인!</p>
+        ]]>
+    </description>
+
+    <change-notes>
+        <![CDATA[
+        <ul>
+            <li>1.0 - 초기 릴리즈</li>
+        </ul>
+        ]]>
+    </change-notes>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+    <actions>
+        <action id="StretchTimer" class="org.example.StretchTimerPlugin" text="Start Stretch Timer"
+                description="스트레칭을 위한 타이머를 시작합니다" icon="/icons/stretch.png">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin> 
